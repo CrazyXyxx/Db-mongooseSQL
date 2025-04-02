@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Story Time</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../images/logo.png" alt="Story Time Logo">
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+            <button type="submit" class="submit-btn">Log In</button>
+        </form>
+
+        <!-- Partners Logos -->
+        <div class="partners-logos">
+            <img src="../images/airtel.png" alt="Airtel-GA" class="partner-logo">
+            <img src="../images/google.png" alt="Google" class="partner-logo">
+        </div>
+    </div>
+
+    <script src="../nodules/login.js"></script>
+</body>
+</html>
