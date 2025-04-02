@@ -85,7 +85,7 @@ h1 {
     display: flex;
     gap: 20px;
     margin-top: 30px;
-    justify-content: flex-start; /* Aligner les logos de gauche à droite */
+    justify-content: center; /* Aligner les logos de gauche à droite */
     width: 100%;
 }
 
