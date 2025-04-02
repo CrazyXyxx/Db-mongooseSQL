@@ -1,0 +1,207 @@
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Menu Burger */
+.menu-burger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu-items {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+}
+
+.menu-items a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu-items a:hover {
+    background-color: #333;
+}
+
+.menu-burger:hover + .menu-items {
+    display: block;
+}
+
+/* Logo */
+.logo {
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    animation: rotate 5s linear infinite;
+}
+
+/* Animation du logo */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Assistant Chat */
+.assistant-chat {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    background-color: #00bfff;
+    border-radius: 50%;
+    padding: 20px;
+    animation: float 2s ease-in-out infinite;
+}
+
+.chat-bubble {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chat-bubble span {
+font-size: 30px;
+}
+
+/* Animation de flottement */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Confession */
+.confession-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.confession-content h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.confession-content p {
+    color: #bbb;
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* Boutons */
+.button-container {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00bfff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #00aaff;
+}
+
+/* Admins */
+.admins {
+    margin-top: 40px;
+}
+
+.admin {
+    display: inline-block;
+    margin: 10px;
+}
+
+.admin-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #00bfff;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.admin-name {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Animation de pulsation des admins */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Musique */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+audio {
+    width: 100px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 50px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .music-player {
+        bottom: 10px;
+        right: 10px;
+    }
+}
