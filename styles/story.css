@@ -71,6 +71,9 @@ h1 {
     border-radius: 25px;
     text-transform: uppercase;
     transition: background-color 0.3s, transform 0.3s;
+    width: 250px;  /* Largeur fixe pour les boutons */
+    display: inline-block;
+    text-align: center;
 }
 
 .cta-button:hover {
