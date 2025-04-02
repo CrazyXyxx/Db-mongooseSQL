@@ -84,7 +84,7 @@ h1 {
     display: flex;
     gap: 20px;
     margin-top: 30px;
-    justify-content: center;  /* Aligne horizontalement les logos des partenaires */
+    justify-content: flex-start;  /* Aligne horizontalement les logos des partenaires */
 }
 
 .partner-img {
